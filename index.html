@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Internship Program</h1>
+    <p id="description">Find the internship that suits your preferences</p>
+
+    <form method="post" id="survey-form">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <!-- name -->
+            <label for="name" id="name-label">Name:
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            </label>
+            <!-- email -->
+            <label for="email" id="email-label">Email:
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            </label>
+            <!-- phone number -->
+            <label for="number" id="number-label">Phone:
+                <input type="number" name="number" id="number" placeholder="Enter your phone number" min="0000000000"
+                    max="9999999999" required>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <!-- college name -->
+            <label for="uni" id="name-label">College/University Name:
+                <input type="text" name="uniname" id="uni" placeholder="Enter your name" required>
+            </label><br>
+            <!-- course -->
+            <label for="course">Degree/Masters
+                <label for="course-bca" class="radio">
+                    <input type="radio" name="course" id="course-bca" value="bca" checked> BCA
+                </label>
+                <label for="course-bba" class="radio">
+                    <input type="radio" name="course" id="course-bba" value="bba"> BBA
+                </label>
+                <label for="course-mca" class="radio">
+                    <input type="radio" name="course" id="course-mca" value="mca"> MCA
+                </label>
+                <label for="course-mba" class="radio">
+                    <input type="radio" name="course" id="course-mba" value="mba"> MBA
+                </label>
+                <label for="course-btech" class="radio">
+                    <input type="radio" name="course" id="course-btech" value="btech"> B-TECH
+                </label>
+                <label for="course-mtech" class="radio">
+                    <input type="radio" name="course" id="course-mtech" value="mtech"> M-TECH
+                </label>
+            </label>
+            <!-- year -->
+            <label for="year">Year
+                <label for="year-1" class="radio">
+                    <input type="radio" name="year" id="year-1" value="1"> First
+                </label>
+                <label for="year-2" class="radio">
+                    <input type="radio" name="year" id="year-2" value="2"> Second
+                </label>
+                <label for="year-3" class="radio">
+                    <input type="radio" name="year" id="year-3" value="3"> Third
+                </label>
+                <label for="final" class="radio">
+                    <input type="radio" name="year" id="final" value="4" checked> Final
+                </label>
+                <label for="passout" class="radio">
+                    <input type="radio" name="year" id="passout" value="5"> Pass Out
+                </label>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Internship Preferences</legend>
+            <label for="dropdown">When can you start?
+                <select name="starting" id="dropdown">
+                    <option value="" disabled selected>Choose an option</option>
+                    <option value="1">Immediately</option>
+                    <option value="2">1 month</option>
+                    <option value="3">2 months</option>
+                    <option value="4">3 months</option>
+                </select>
+            </label>
+            <label for="dropdown">Duration:
+                <select name="starting" id="dropdown">
+                    <option value="" disabled selected>Choose an option</option>
+                    <option value="1">1 month</option>
+                    <option value="2">2 months</option>
+                    <option value="3">3 months</option>
+                </select>
+            </label>
+            <label for="location">what are you comfortable with?
+                <label for="location-remote" class="radio">
+                    <input type="radio" name="location" id="location-remote" value="remote"> Remote
+                </label>
+                <label for="location-onsite" class="radio">
+                    <input type="radio" name="location" id="location-onsite" value="onsite"> On-site
+                </label>
+                <label for="location-hybrid" class="radio">
+                    <input type="radio" name="location" id="location-hybrid" value="hybrid" checked> Hybrid
+                </label>
+            </label>
+        </fieldset>
+        <!-- about -->
+        <label for="introduction">Briefly introduce yourself
+            <textarea name="introduction" id="introduction" cols="30" rows="3"
+                placeholder="I am a detail-oriented..."></textarea>
+        </label>
+        <!-- age -->
+        <label for="age">
+            <input type="checkbox" name="age" id="age" value="age" required>
+            Yes, I am 18+ years old.
+        </label>
+        <!-- t&c -->
+        <label for="terms">
+            <input type="checkbox" name="terms" id="terms" value="terms" required>
+            I have read and understand the <a href="#">Terms and conditions</a>.
+        </label>
+        <!-- mail -->
+        <label for="email">
+            <input type="checkbox" name="email" id="email" value="email">
+            I agree to receive news, events and new job openings.
+        </label>
+        <!-- submit -->
+        <button value="Submit" id="submit">Submit</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+body {
+    background-image: url('https://c1.wallpaperflare.com/preview/294/960/948/accomplishment-ceremony-education-graduation.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: hard-light;
+    background-color: indigo;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 4rem 0;
+    padding: 0;
+}
+
+h1,
+p, legend {
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-variant: small-caps;
+    font-size: 3em;
+}
+
+p, legend {
+    font: oblique 1.3em bold;
+    margin: -20px auto 2em;
+}
+
+form {
+    background-image: linear-gradient(rgba(141, 54, 83, 0.8), rgba(21, 51, 139, 0.8));
+    margin: 0 auto;
+    max-width: 40vw;
+    min-width: 480px;
+    padding: 2rem 3rem;
+}
+
+label {
+    display: block;
+    margin: 0 0 1em 0;
+    color: white;
+    font-size: large;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+select,
+textarea,
+button {
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+    margin: 7px auto;
+    box-shadow: 2px 2px 5px blanchedalmond;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+textarea,
+button {
+    display: block;
+    width: 100%;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.radio {
+    margin: 8px;
+}
+
+fieldset, legend {
+    margin: 1em 0 1.5em 0;
+    border: none;
+}
+
+fieldset {
+    border-top: 2px solid white;
+}
+
+a {
+    color: white;
+}
