@@ -32,6 +32,8 @@ form {
     max-width: 40vw;
     min-width: 480px;
     padding: 2rem 3rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 
 label {
@@ -83,4 +85,53 @@ fieldset {
 
 a {
     color: white;
+}
+
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+        min-width: unset;
+        padding: 1.5rem;
+    }
+
+    input, textarea, button {
+        font-size: 1rem;
+    }
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #ffcc00;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.radio input[type="radio"],
+.radio input[type="checkbox"] {
+    margin-right: 0.5em;
+    transform: scale(1.1);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ffcc00;
+}
+
+button {
+    margin-top: 1.5em;
+}
+button:hover {
+    background-color: #45a049;
+    cursor: pointer;
+}
+button:active {
+    background-color: #3e8e41;
+    transform: translateY(2px);
+}
+
+button,
+input,
+select,
+textarea {
+    transition: all 0.3s ease;
 }
