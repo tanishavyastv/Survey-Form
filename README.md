@@ -18,7 +18,7 @@ A responsive and aesthetically styled web form designed to collect internship-re
 
 ## 🚀 Live Demo
 
-🌍 **Preview the form here**: [https://internship-survey-form.vercel.app](https://internship-survey-form.vercel.app)
+🌍 **Preview the form here**: [https://internship-survey-form.vercel.app](https://survey-form-ochre-gamma.vercel.app/)
 
 Deployed using [Vercel](https://vercel.com)
 
